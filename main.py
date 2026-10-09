@@ -3,11 +3,11 @@ from PIL import Image
 import base64
 import streamlit.components.v1 as components
 
-with open("/assets/lklogopng2.png", "rb") as f:
+with open("assets/lklogopng2.png", "rb") as f:
     logo = base64.b64encode(f.read()).decode()
 
 #------------------- TITLEBAR CONTENT ----------------------
-im = Image.open("/assets/lklogo.ico")
+im = Image.open("assets/lklogo.ico")
 
 st.set_page_config(
 page_title="Lauritz Knudsen Smart Hospital",
